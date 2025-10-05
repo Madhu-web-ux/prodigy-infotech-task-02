@@ -1,0 +1,106 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Stopwatch container */
+.stopwatch-container {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 60px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.stopwatch-container h1 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #00ffff;
+}
+
+/* Timer display */
+.timer {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+/* Buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.start {
+  background: #00ffea;
+  color: #000;
+}
+
+.start:hover {
+  background: #00d6cc;
+  transform: scale(1.05);
+}
+
+.pause {
+  background: #ffce00;
+  color: #000;
+}
+
+.pause:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+.reset {
+  background: #ff4d6d;
+  color: #fff;
+}
+
+.reset:hover {
+  background: #e63a58;
+  transform: scale(1.05);
+}
+
+/* Laps */
+.laps h2 {
+  margin-bottom: 15px;
+  color: #00ffff;
+}
+
+.laps ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.laps ul li {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+}
